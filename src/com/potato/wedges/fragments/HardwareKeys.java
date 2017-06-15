@@ -39,6 +39,8 @@ import com.android.internal.utils.du.ActionConstants;
 import com.android.internal.utils.du.DUActionUtils;
 import com.potato.wedges.preferences.CustomSeekBarPreference;
 
+import com.potato.wedges.preferences.SystemSettingSwitchPreference;
+
 public class HardwareKeys extends ActionFragment implements Preference.OnPreferenceChangeListener {
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
 

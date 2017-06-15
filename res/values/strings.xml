@@ -328,6 +328,10 @@
     <string name="hardware_keys_category">Navigation buttons</string>
     <string name="hardware_keys_disable_title">Disable navigation buttons</string>
 
+    <!-- ANBI -->
+    <string name="anbi_title">Accidental touch</string>
+    <string name="anbi_summary">Prevent interaction with navigation buttons while the screen is being touched</string>
+
     <!-- Button brightness -->
     <string name="button_backlight_options_category">Backlight options</string>
     <string name="button_backlight_enable_title">Allow button backlight</string>
