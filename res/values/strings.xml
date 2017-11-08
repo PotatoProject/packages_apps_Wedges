@@ -143,8 +143,15 @@
 
     <!-- Heads up -->
     <string name="heads_up_title">Allow Heads up</string>
-    <string name="heads_up_summary_enabled">Pop-up notifications are enabled</string>
-    <string name="heads_up_summary_disabled">Pop-up notifications are disabled</string>
+    <string name="heads_up_summary_enabled">Heads-up notifications are enabled</string>
+    <string name="heads_up_summary_disabled">Heads-up notifications are disabled</string>
+
+    <string name="heads_up_blacklist_add_package_title">Add app</string>
+    <string name="heads_up_blacklist_add_package_summary">Disable heads-up notifications in these applications</string>
+    <string name="heads_up_blacklist_title">Blacklist</string>
+    <string name="heads_up_blacklist_choose_app">Select app</string>
+    <string name="heads_up_blacklist_dialog_delete_title">Delete</string>
+    <string name="heads_up_blacklist_dialog_delete_message">Remove selected item?</string>
 
     <!-- Actions dialog and default task values set in ActionPreference xml-->
     <string name="choose_action_title">Choose action</string>
