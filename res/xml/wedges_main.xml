@@ -20,7 +20,7 @@
         android:key="wedges_settings"
         android:title="@string/navigation_main"
         android:summary="@string/navigation_main_summary"
-        android:fragment="com.potato.wedges.fragments.NavigationFragment"
+        android:fragment="com.potato.wedges.fragments.NavigationBar"
         android:icon="@drawable/ic_potato" />
 
 </PreferenceScreen>
