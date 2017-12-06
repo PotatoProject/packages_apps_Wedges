@@ -26,8 +26,15 @@
             android:key="software_keys"
             android:title="@string/software_keys"
             android:summary="@string/software_keys_summary"
-            android:icon="@drawable/ic_navigation"
+            android:icon="@drawable/ic_navbar"
             android:fragment="com.potato.wedges.fragments.NavigationBar" />
+
+        <PreferenceScreen
+            android:key="hardware_keys"
+            android:title="@string/hardware_keys"
+            android:summary="@string/hardware_keys_summary"
+            android:icon="@drawable/ic_buttons"
+            android:fragment="com.potato.wedges.fragments.HardwareKeys" />
 
     </PreferenceCategory>
 </PreferenceScreen>
