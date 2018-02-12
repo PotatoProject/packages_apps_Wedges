@@ -16,7 +16,7 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <com.dirtyunicorns.tweaks.preferences.SystemSettingListPreference
+    <com.potato.wedges.preferences.SystemSettingListPreference
         android:key="status_bar_carrier"
         android:title="@string/show_carrier_title"
         android:dialogTitle="@string/carrier_options"

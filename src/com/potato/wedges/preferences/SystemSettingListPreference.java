@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.tweaks.preferences;
+package com.potato.wedges.preferences;
 
 import android.content.Context;
 import android.support.v7.preference.ListPreference;
