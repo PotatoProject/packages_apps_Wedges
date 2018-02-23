@@ -29,6 +29,13 @@
             android:icon="@drawable/ic_navbar"
             android:fragment="com.potato.wedges.fragments.NavigationBar" />
 
+         <PreferenceScreen
+            android:key="edge_gestures"
+            android:fragment="com.potato.wedges.fragments.EdgeGesturesSettings"
+            android:title="@string/edge_gestures_title"
+            android:summary="@string/edge_gestures_summary"
+            android:icon="@drawable/ic_edge_gestures"/>
+
         <PreferenceScreen
             android:key="hardware_keys"
             android:title="@string/hardware_keys"
