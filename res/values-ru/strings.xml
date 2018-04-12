@@ -28,12 +28,6 @@
     <string name="navigation_main">Навигация</string>
     <string name="navigation_main_summary">Аппаратные и программные кнопки</string>
 
-    <string name="software_keys">Программные кнопки</string>
-    <string name="software_keys_summary">Настройка панели навигации</string>
-
-    <string name="hardware_keys">Аппаратные кнопки</string>
-    <string name="hardware_keys_summary">Настройка физических кнопок</string>
-
     <string name="themes_main">Темы</string>
     <string name="themes_main_summary">Раскрасьте меню!</string>
 

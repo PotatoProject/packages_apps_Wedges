@@ -43,12 +43,6 @@
     <string name="navigation_main">导航栏</string>
     <string name="navigation_main_summary"> 按键和导航栏</string>
 
-    <string name="software_keys">导航栏</string>
-    <string name="software_keys_summary">自定义导航栏</string>
-
-    <string name="hardware_keys">按键</string>
-    <string name="hardware_keys_summary">自定义实体按键</string>
-
     <string name="themes_main">主题</string>
     <string name="themes_main_summary">为菜单着色!</string>
 
