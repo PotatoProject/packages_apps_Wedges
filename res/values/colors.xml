@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#795548</color>
+    <color name="colorPrimaryDark">#5D4037</color>
+    <color name="colorAccent">#8BC34A</color>
+    <color name="colorWedges">#795548</color>
+    <color name="colorUpdates">#2196F3</color>
+    <color name="colorSocial">#8BC34A</color>
+    <color name="colorAbout">#E91E63</color>
+</resources>

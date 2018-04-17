@@ -1,0 +1,11 @@
+<resources>
+    <string name="title_wedges">Wedges</string>
+    <string name="wedges_summary">Would you prefer fries instead?</string>
+    <string name="title_updates">Updates</string>
+    <string name="title_social">Social</string>
+    <string name="title_about">About Us</string>
+
+    <string name="navigation_main">Navigation</string>
+    <string name="navigation_main_summary">Hardware and software keys</string>
+
+</resources>

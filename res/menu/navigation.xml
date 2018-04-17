@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_wedges"
+        android:icon="@drawable/ic_potato"
+        android:title="@string/title_wedges" />
+
+    <item
+        android:id="@+id/navigation_updates"
+        android:icon="@drawable/ic_updates_24dp"
+        android:title="@string/title_updates" />
+
+    <item
+        android:id="@+id/navigation_social"
+        android:icon="@drawable/ic_social_24dp"
+        android:title="@string/title_social"  />
+
+    <item
+        android:id="@+id/navigation_about"
+        android:icon="@drawable/ic_about_24dp"
+        android:title="@string/title_about"  />
+
+</menu>
