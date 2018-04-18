@@ -17,7 +17,7 @@
     android:title="@string/title_wedges" >
 
     <Preference
-        android:key="wedges_settings"
+        android:key="navigation_settings"
         android:title="@string/navigation_main"
         android:summary="@string/navigation_main_summary"
         android:fragment="com.potato.wedges.fragments.NavigationFragment"
