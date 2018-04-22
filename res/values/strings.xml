@@ -18,6 +18,10 @@
     <string name="themes_main">Themes</string>
     <string name="themes_main_summary">Color up the menus!</string>
 
+    <string name="colors_category">Color settings</string>
+    <string name="theme_color">Accent colors</string>
+    <string name="theme_color_summary">Control primary accent colors</string>
+
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>
