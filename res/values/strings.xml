@@ -18,6 +18,9 @@
     <string name="themes_main">Themes</string>
     <string name="themes_main_summary">Color up the menus!</string>
 
+    <string name="misc_main">Miscellaneous</string>
+    <string name="misc_main_summary">Miscellaneous settings</string>
+
     <string name="colors_category">Color settings</string>
     <string name="theme_color">Accent colors</string>
     <string name="theme_base">Base colors</string>

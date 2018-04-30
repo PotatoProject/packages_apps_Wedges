@@ -30,4 +30,11 @@
         android:fragment="com.potato.wedges.fragments.ThemesFragment"
         android:icon="@drawable/ic_themes" />
 
+    <Preference
+        android:key="misc_settings"
+        android:title="@string/misc_main"
+        android:summary="@string/misc_main_summary"
+        android:fragment="com.potato.wedges.fragments.MiscFragment"
+        android:icon="@drawable/ic_misc_settings" />
+
 </PreferenceScreen>
