@@ -42,6 +42,7 @@ import libcore.util.Objects;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
+import com.potato.wedges.preferences.CustomSeekBarPreference;
 
 public class ThemesFragment extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
@@ -49,6 +50,9 @@ public class ThemesFragment extends SettingsPreferenceFragment implements Prefer
     private static final String KEY_THEME_COLOR = "theme_color";
     private static final String KEY_THEME_BASE = "theme_base";
     private static final String KEY_SYSTEM_THEME_STYLE = "system_theme_style";
+
+    private static final String SYSUI_ROUNDED_SIZE = "sysui_rounded_size";
+    private static final String SYSUI_ROUNDED_CONTENT_PADDING = "sysui_rounded_content_padding";
 
     private static final String accentPrefix = "com.potato.overlay.accent";
     private static final String basePrefix = "com.potato.overlay.base";
@@ -59,6 +63,9 @@ public class ThemesFragment extends SettingsPreferenceFragment implements Prefer
     private ListPreference mSystemThemeBase;
     private ListPreference mSystemThemeStyle;
     private Context mContext;
+
+    private CustomSeekBarPreference mCornerRadius;
+    private CustomSeekBarPreference mContentPadding;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -78,6 +85,20 @@ public class ThemesFragment extends SettingsPreferenceFragment implements Prefer
         mSystemThemeStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
         mSystemThemeStyle.setSummary(mSystemThemeStyle.getEntry());
         mSystemThemeStyle.setOnPreferenceChangeListener(this);
+
+        // Rounded Corner Radius
+        mCornerRadius = (CustomSeekBarPreference) findPreference(SYSUI_ROUNDED_SIZE);
+        int cornerRadius = Settings.Secure.getInt(mContext.getContentResolver(),
+                Settings.Secure.SYSUI_ROUNDED_SIZE, 25);
+        mCornerRadius.setValue(cornerRadius / 1);
+        mCornerRadius.setOnPreferenceChangeListener(this);
+
+        // Rounded Content Padding
+        mContentPadding = (CustomSeekBarPreference) findPreference(SYSUI_ROUNDED_CONTENT_PADDING);
+        int contentPadding = Settings.Secure.getInt(mContext.getContentResolver(),
+                Settings.Secure.SYSUI_ROUNDED_CONTENT_PADDING, 10);
+        mContentPadding.setValue(contentPadding / 1);
+        mContentPadding.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -120,9 +141,16 @@ public class ThemesFragment extends SettingsPreferenceFragment implements Prefer
             Settings.System.putInt(getContentResolver(), Settings.System.SYSTEM_THEME_STYLE, Integer.valueOf(value));
             int valueIndex = mSystemThemeStyle.findIndexOfValue(value);
             mSystemThemeStyle.setSummary(mSystemThemeStyle.getEntries()[valueIndex]);
+        } else if (preference == mCornerRadius) {
+            int value = (Integer) objValue;
+            Settings.Secure.putInt(mContext.getContentResolver(),
+                Settings.Secure.SYSUI_ROUNDED_SIZE, value * 1);
+        } else if (preference == mContentPadding) {
+            int value = (Integer) objValue;
+            Settings.Secure.putInt(mContext.getContentResolver(),
+                Settings.Secure.SYSUI_ROUNDED_CONTENT_PADDING, value * 1);
         }
         return true;
-
     }
 
     private void setupBasePreference()
