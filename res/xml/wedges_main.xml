@@ -37,4 +37,12 @@
         android:fragment="com.potato.wedges.fragments.MiscFragment"
         android:icon="@drawable/ic_misc_settings" />
 
+    <Preference
+        android:key="qs_settings"
+        android:title="@string/qs_main"
+        android:summary="@string/qs_main_summary"
+        android:fragment="com.potato.wedges.fragments.QSFragment"
+        android:icon="@drawable/ic_qs_settings" />
+
+
 </PreferenceScreen>

@@ -21,6 +21,9 @@
     <string name="misc_main">Miscellaneous</string>
     <string name="misc_main_summary">Miscellaneous settings</string>
 
+    <string name="qs_main">Quick Settings</string>
+    <string name="qs_main_summary">QS-Panel Settings</string>
+
     <string name="colors_category">Color settings</string>
     <string name="theme_color">Accent colors</string>
     <string name="theme_base">Base colors</string>
