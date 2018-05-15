@@ -16,6 +16,9 @@
 
 package com.potato.wedges.fragments;
 
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
+
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.Settings;
@@ -34,7 +37,9 @@ import com.potato.wedges.preferences.CustomSeekBarPreference;
 public class QSFragment extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
     private static final String QS_PANEL_ALPHA = "qs_panel_alpha";
+    private static final String QS_PANEL_COLOR = "qs_panel_color";
     private CustomSeekBarPreference mQsPanelAlpha;
+    private ColorPickerPreference mQsPanelColor;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,6 +50,12 @@ public class QSFragment extends SettingsPreferenceFragment implements Preference
                 Settings.System.QS_PANEL_BG_ALPHA, 255, UserHandle.USER_CURRENT);
         mQsPanelAlpha.setValue(qsPanelAlpha);
         mQsPanelAlpha.setOnPreferenceChangeListener(this);
+
+        mQsPanelColor = (ColorPickerPreference) findPreference(QS_PANEL_COLOR);
+        int QsColor = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.QS_PANEL_BG_COLOR, Color.WHITE, UserHandle.USER_CURRENT);
+        mQsPanelColor.setNewPreviewColor(QsColor);
+        mQsPanelColor.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -66,7 +77,14 @@ public class QSFragment extends SettingsPreferenceFragment implements Preference
                     Settings.System.QS_PANEL_BG_ALPHA, bgAlpha,
                     UserHandle.USER_CURRENT);
             return true;
+        } else if (preference == mQsPanelColor) {
+            int bgColor = (Integer) objValue;
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.QS_PANEL_BG_COLOR, bgColor,
+                    UserHandle.USER_CURRENT);
+            return true;
         }
+
         return false;
     }
 
