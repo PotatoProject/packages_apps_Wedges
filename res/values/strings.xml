@@ -34,6 +34,8 @@
     <string name="corner_radius">Rounded Corner Radius</string>
     <string name="content_padding">Corner Content Padding</string>
 
+    <string name="power_category">Power Menu</string>
+
     <!-- System theme style -->
     <string name="system_theme_style_title">System style</string>
     <string name="system_theme_style_auto">Wallpaper based</string>
@@ -269,4 +271,12 @@
     <!-- QuickSettings Panel Transparency -->
     <string name="qs_panel_alpha_title">Transparency</string>
     <string name="qs_panel_color_title">Color</string>
+
+    <!-- Power Menu -->
+    <string name="powermenu_reboot_title">Reboot</string>
+    <string name="powermenu_advanced_reboot_title">Advanced reboot</string>
+    <string name="powermenu_advanced_reboot_summary">Enables the advanced reboot menu for options to reboot to recovery, bootloader, restart systemui or trigger a hot reboot</string>
+    <string name="powermenu_screenshot_title">Screenshot</string>
+    <string name="powermenu_airplane_title">Airplane mode</string>
+
 </resources>
