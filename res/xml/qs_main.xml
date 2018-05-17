@@ -21,6 +21,10 @@
         android:summary="@string/brightness_icon_summary"
         android:defaultValue="false"/>
 
+    <PreferenceCategory
+        android:key="qs_colors"
+        android:title="@string/qs_colors_category" >
+
     <com.potato.wedges.preferences.CustomSeekBarPreference
         android:key="qs_panel_alpha"
         android:title="@string/qs_panel_alpha_title"
@@ -41,4 +45,5 @@
         android:summary="@string/qs_bg_wall_summary"
         android:defaultValue="false"/>
 
+    </PreferenceCategory>
 </PreferenceScreen>

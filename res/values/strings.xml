@@ -1,10 +1,21 @@
 <resources>
+    <!-- Tabs -->
     <string name="title_wedges">Wedges</string>
-    <string name="wedges_summary">Would you prefer fries instead?</string>
     <string name="title_updates">Updates</string>
     <string name="title_social">Social</string>
     <string name="title_about">About Us</string>
     <string name="device_controls">Device controls</string>
+
+    <!-- Categories -->
+    <string name="colors_category">Color settings</string>
+    <string name="styles_category">Styles</string>
+    <string name="corners_category">Corners</string>
+    <string name="power_category">Power menu</string>
+    <string name="power_ls_category">Lockscreen power menu</string>
+    <string name="qs_colors_category">Colors and more</string>
+
+    <!-- Others -->
+    <string name="wedges_summary">Would you prefer fries instead?</string>
 
     <string name="navigation_main">Navigation</string>
     <string name="navigation_main_summary">Hardware and software keys</string>
@@ -21,20 +32,14 @@
     <string name="misc_main">Miscellaneous</string>
     <string name="misc_main_summary">Miscellaneous settings</string>
 
-    <string name="qs_main">Quick Settings</string>
-    <string name="qs_main_summary">QS-Panel Settings</string>
+    <string name="qs_main">Quick settings</string>
+    <string name="qs_main_summary">QS-Panel settings</string>
 
-    <string name="colors_category">Color settings</string>
     <string name="theme_color">Accent colors</string>
     <string name="theme_base">Base colors</string>
 
-    <string name="styles_category">Styles</string>
-
-    <string name="corners_category">Corners</string>
-    <string name="corner_radius">Rounded Corner Radius</string>
-    <string name="content_padding">Corner Content Padding</string>
-
-    <string name="power_category">Power Menu</string>
+    <string name="corner_radius">Rounded corner radius</string>
+    <string name="content_padding">Corner content padding</string>
 
     <string name="qs_bg_wall_title">Use Wallpaper colors</string>
     <string name="qs_bg_wall_summary">Set QS background color from Wallpaper</string>

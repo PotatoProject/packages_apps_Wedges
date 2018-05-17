@@ -17,25 +17,11 @@
     android:title="@string/title_wedges" >
 
     <Preference
-        android:key="navigation_settings"
-        android:title="@string/navigation_main"
-        android:summary="@string/navigation_main_summary"
-        android:fragment="com.potato.wedges.fragments.NavigationFragment"
-        android:icon="@drawable/ic_navigation_settings" />
-
-    <Preference
         android:key="theme_settings"
         android:title="@string/themes_main"
         android:summary="@string/themes_main_summary"
         android:fragment="com.potato.wedges.fragments.ThemesFragment"
         android:icon="@drawable/ic_themes" />
-
-    <Preference
-        android:key="misc_settings"
-        android:title="@string/misc_main"
-        android:summary="@string/misc_main_summary"
-        android:fragment="com.potato.wedges.fragments.MiscFragment"
-        android:icon="@drawable/ic_misc_settings" />
 
     <Preference
         android:key="qs_settings"
@@ -44,5 +30,18 @@
         android:fragment="com.potato.wedges.fragments.QSFragment"
         android:icon="@drawable/ic_qs_settings" />
 
+    <Preference
+        android:key="navigation_settings"
+        android:title="@string/navigation_main"
+        android:summary="@string/navigation_main_summary"
+        android:fragment="com.potato.wedges.fragments.NavigationFragment"
+        android:icon="@drawable/ic_navigation_settings" />
+
+    <Preference
+        android:key="misc_settings"
+        android:title="@string/misc_main"
+        android:summary="@string/misc_main_summary"
+        android:fragment="com.potato.wedges.fragments.MiscFragment"
+        android:icon="@drawable/ic_misc_settings" />
 
 </PreferenceScreen>
