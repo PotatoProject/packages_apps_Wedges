@@ -44,6 +44,13 @@
     <string name="qs_bg_wall_title">Use Wallpaper colors</string>
     <string name="qs_bg_wall_summary">Set QS background color from Wallpaper</string>
 
+    <string name="clock_main">Clock settings</string>
+    <string name="clock_main_summary">Statusbar clock customisation</string>
+    <string name="carrier_main">Carrier label settings</string>
+    <string name="carrier_main_summary">Set carrier label options</string>
+    <string name="statusbar_main">Statusbar settings</string>
+    <string name="statusbar_main_summary">Customise statusbar elements</string>
+
     <!-- System theme style -->
     <string name="system_theme_style_title">System style</string>
     <string name="system_theme_style_auto">Wallpaper based</string>

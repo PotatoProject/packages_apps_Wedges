@@ -17,6 +17,13 @@
     android:title="@string/title_wedges" >
 
     <Preference
+        android:key="statusbar_settings"
+        android:title="@string/statusbar_main"
+        android:summary="@string/statusbar_main_summary"
+        android:fragment="com.potato.wedges.fragments.StatusbarFragment"
+        android:icon="@drawable/ic_statusbar" />
+
+    <Preference
         android:key="theme_settings"
         android:title="@string/themes_main"
         android:summary="@string/themes_main_summary"
