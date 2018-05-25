@@ -30,4 +30,11 @@
         android:fragment="com.potato.wedges.fragments.CarrierLabel"
         android:icon="@drawable/ic_carrier" />
 
+    <Preference
+        android:key="battery_settings"
+        android:title="@string/battery_main"
+        android:summary="@string/battery_main_summary"
+        android:fragment="com.potato.wedges.fragments.BatteryOptions"
+        android:icon="@drawable/ic_battery" />
+
 </PreferenceScreen>
