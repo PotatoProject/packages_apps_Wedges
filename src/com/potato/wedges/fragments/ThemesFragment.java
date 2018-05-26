@@ -44,6 +44,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 import com.potato.wedges.preferences.CustomSeekBarPreference;
+import com.potato.wedges.preferences.SystemSettingSwitchPreference;
 
 public class ThemesFragment extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
@@ -54,6 +55,8 @@ public class ThemesFragment extends SettingsPreferenceFragment implements Prefer
 
     private static final String SYSUI_ROUNDED_SIZE = "sysui_rounded_size";
     private static final String SYSUI_ROUNDED_CONTENT_PADDING = "sysui_rounded_content_padding";
+
+    private static final String SETTINGS_ICON_TINT = "settings_icon_tint";
 
     private static final String accentPrefix = "com.potato.overlay.accent";
     private static final String basePrefix = "com.potato.overlay.base";
@@ -67,6 +70,7 @@ public class ThemesFragment extends SettingsPreferenceFragment implements Prefer
 
     private CustomSeekBarPreference mCornerRadius;
     private CustomSeekBarPreference mContentPadding;
+    private SystemSettingSwitchPreference mIconTint;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -109,6 +113,12 @@ public class ThemesFragment extends SettingsPreferenceFragment implements Prefer
                 Settings.Secure.SYSUI_ROUNDED_CONTENT_PADDING, res.getDimensionPixelSize(resourceIdPadding));
         mContentPadding.setValue(contentPadding / 1);
         mContentPadding.setOnPreferenceChangeListener(this);
+        mIconTint = (SystemSettingSwitchPreference) findPreference(SETTINGS_ICON_TINT);
+        if (isDark()) {
+            mIconTint.setEnabled(true);
+        } else {
+            mIconTint.setEnabled(false);
+        }
     }
 
     @Override
@@ -159,6 +169,11 @@ public class ThemesFragment extends SettingsPreferenceFragment implements Prefer
             int value = (Integer) objValue;
             Settings.Secure.putInt(mContext.getContentResolver(),
                 Settings.Secure.SYSUI_ROUNDED_CONTENT_PADDING, value * 1);
+        }
+        if (isDark()) {
+            mIconTint.setEnabled(true);
+        } else {
+            mIconTint.setEnabled(false);
         }
         return true;
     }
@@ -290,6 +305,17 @@ public class ThemesFragment extends SettingsPreferenceFragment implements Prefer
         return new String[0];
     }
 
+    public boolean isDark() {
+        OverlayInfo themeInfo = null;
+        try {
+            themeInfo = mOverlayService.getOverlayInfo("com.android.system.theme.dark",
+                    UserHandle.myUserId());
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+        return themeInfo != null && themeInfo.isEnabled();
+    }
+
     public static class OverlayManager {
         private final IOverlayManager mService;
 
@@ -311,6 +337,11 @@ public class ThemesFragment extends SettingsPreferenceFragment implements Prefer
         public List<OverlayInfo> getOverlayInfosForTarget(String target, int userId)
                 throws RemoteException {
             return mService.getOverlayInfosForTarget(target, userId);
+        }
+
+        public OverlayInfo getOverlayInfo(String target, int userId)
+                throws RemoteException {
+            return mService.getOverlayInfo(target, userId);
         }
     }
 }
