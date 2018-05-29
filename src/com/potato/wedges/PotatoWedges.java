@@ -9,7 +9,7 @@ import android.support.annotation.NonNull;
 import android.transition.Fade;
 import com.potato.wedges.navigation.BottomNavigationViewCustom;
 import com.potato.wedges.fragments.WedgesFragment;
-import com.potato.wedges.fragments.UpdatesFragment;
+import com.potato.wedges.fragments.UpdatesDummyFragment;
 import com.potato.wedges.fragments.SocialFragment;
 import com.potato.wedges.fragments.AboutFragment;
 import android.view.MenuItem;
@@ -37,7 +37,7 @@ public class PotatoWedges extends SettingsPreferenceFragment {
                         return true;
                     case R.id.navigation_updates:
                         setAppColors(R.color.updates_icon);
-                        setFragment(new UpdatesFragment());
+                        setFragment(new UpdatesDummyFragment());
                         return true;
                     case R.id.navigation_social:
                         setAppColors(R.color.social_icon);
