@@ -12,10 +12,6 @@ import com.potato.wedges.fragments.WedgesFragment;
 import com.potato.wedges.fragments.UpdatesFragment;
 import com.potato.wedges.fragments.SocialFragment;
 import com.potato.wedges.fragments.AboutFragment;
-import android.support.v13.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
@@ -26,31 +22,32 @@ import android.view.LayoutInflater;
 
 import java.util.prefs.PreferencesFactory;
 public class PotatoWedges extends SettingsPreferenceFragment {
-    private ActionBar toolbar;
-    private BottomNavigationViewCustom navigation;
 
+    private BottomNavigationViewCustom navigation;
     private BottomNavigationViewCustom.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationViewCustom.OnNavigationItemSelectedListener() {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.navigation_wedges:
-                    setAppColors(R.color.wedges_icon);
-                    setFragment(new WedgesFragment());
-                    return true;
-                case R.id.navigation_updates:
-                    setAppColors(R.color.updates_icon);
-                    setFragment(new UpdatesFragment());
-                    return true;
-                case R.id.navigation_social:
-                    setAppColors(R.color.social_icon);
-                    setFragment(new SocialFragment());
-                    return true;
-                case R.id.navigation_about:
-                    setAppColors(R.color.about_icon);
-                    setFragment(new AboutFragment());
-                    return true;
+            if (item.getItemId() != navigation.getSelectedItemId()) {
+                switch (item.getItemId()) {
+                    case R.id.navigation_wedges:
+                        setAppColors(R.color.wedges_icon);
+                        setFragment(new WedgesFragment());
+                        return true;
+                    case R.id.navigation_updates:
+                        setAppColors(R.color.updates_icon);
+                        setFragment(new UpdatesFragment());
+                        return true;
+                    case R.id.navigation_social:
+                        setAppColors(R.color.social_icon);
+                        setFragment(new SocialFragment());
+                        return true;
+                    case R.id.navigation_about:
+                        setAppColors(R.color.about_icon);
+                        setFragment(new AboutFragment());
+                        return true;
+                }
             }
             return false;
         }
@@ -64,16 +61,6 @@ public class PotatoWedges extends SettingsPreferenceFragment {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         setFragment(new WedgesFragment());
         return view;
-    }
-
-    private String[] getTitles() {
-        String titleString[];
-        titleString = new String[]{
-                getString(R.string.title_wedges),
-                getString(R.string.title_updates),
-                getString(R.string.title_social),
-                getString(R.string.title_about)};
-        return titleString;
     }
 
     private void setAppColors(int iconColorResource) {
