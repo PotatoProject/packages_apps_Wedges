@@ -1,10 +1,12 @@
 package com.potato.wedges;
 
 import android.app.Activity;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.support.annotation.NonNull;
+import android.transition.Fade;
 import com.potato.wedges.navigation.BottomNavigationViewCustom;
 import com.potato.wedges.fragments.WedgesFragment;
 import com.potato.wedges.fragments.UpdatesFragment;
@@ -27,10 +29,6 @@ public class PotatoWedges extends SettingsPreferenceFragment {
     private ActionBar toolbar;
     private BottomNavigationViewCustom navigation;
 
-    ViewPager mViewPager;
-    PagerAdapter mPagerAdapter;
-    MenuItem menuitem;
-
     private BottomNavigationViewCustom.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationViewCustom.OnNavigationItemSelectedListener() {
 
@@ -39,19 +37,19 @@ public class PotatoWedges extends SettingsPreferenceFragment {
             switch (item.getItemId()) {
                 case R.id.navigation_wedges:
                     setAppColors(R.color.wedges_icon);
-                    mViewPager.setCurrentItem(0);
+                    setFragment(new WedgesFragment());
                     return true;
                 case R.id.navigation_updates:
                     setAppColors(R.color.updates_icon);
-                    mViewPager.setCurrentItem(1);
+                    setFragment(new UpdatesFragment());
                     return true;
                 case R.id.navigation_social:
                     setAppColors(R.color.social_icon);
-                    mViewPager.setCurrentItem(2);
+                    setFragment(new SocialFragment());
                     return true;
                 case R.id.navigation_about:
                     setAppColors(R.color.about_icon);
-                    mViewPager.setCurrentItem(3);
+                    setFragment(new AboutFragment());
                     return true;
             }
             return false;
@@ -63,74 +61,9 @@ public class PotatoWedges extends SettingsPreferenceFragment {
         super.onCreate(savedInstanceState);
         View view = inflater.inflate(R.layout.activity_main, container, false);
         navigation = view.findViewById(R.id.navigation);
-        mViewPager = view.findViewById(R.id.viewpager);
-        mPagerAdapter = new PagerAdapter(getFragmentManager());
-        mViewPager.setAdapter(mPagerAdapter);
-        mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-        	@Override
-        	public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
-        	}
-
-        	@Override
-        	public void onPageSelected(int position) {
-        	    if(menuitem != null) {
-        	        menuitem.setChecked(false);
-        	    } else {
-        	        navigation.getMenu().getItem(0).setChecked(false);
-        	    }
-        	    navigation.getMenu().getItem(position).setChecked(true);
-                switch (position)
-                {
-                        case 0: setAppColors(R.color.wedges_icon);
-                                break;
-                        case 1: setAppColors(R.color.updates_icon);
-                                break;
-                        case 2: setAppColors(R.color.social_icon);
-                                break;
-                        case 3: setAppColors(R.color.about_icon);
-                                break;
-
-                }
-        	    menuitem = navigation.getMenu().getItem(position);
-        	}
-
-        	@Override
-        	public void onPageScrollStateChanged(int state) {
-        	}
-        });
-        setHasOptionsMenu(true);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        setFragment(new WedgesFragment());
         return view;
-    }
-
-    class PagerAdapter extends FragmentPagerAdapter {
-
-        String titles[] = getTitles();
-        private Fragment frags[] = new Fragment[titles.length];
-
-        public PagerAdapter(FragmentManager fm) {
-            super(fm);
-            frags[0] = new WedgesFragment();
-            frags[1] = new UpdatesFragment();
-            frags[2] = new SocialFragment();
-            frags[3] = new AboutFragment();
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            return frags[position];
-        }
-
-        @Override
-        public int getCount() {
-            return frags.length;
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return titles[position];
-        }
     }
 
     private String[] getTitles() {
@@ -148,6 +81,13 @@ public class PotatoWedges extends SettingsPreferenceFragment {
                 super.getActivity().getApplicationContext().getTheme()));
         navigation.setItemTextColor(getResources().getColorStateList(iconColorResource,
                 super.getActivity().getApplicationContext().getTheme()));
+    }
+
+    private void setFragment(Fragment newFragment) {
+        newFragment.setEnterTransition(new Fade(1));
+        newFragment.setExitTransition(new Fade(2));
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        transaction.replace(R.id.frame_container, newFragment).commit();
     }
 
     @Override
