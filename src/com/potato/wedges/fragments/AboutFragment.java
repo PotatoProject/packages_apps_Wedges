@@ -22,19 +22,16 @@ import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v14.preference.PreferenceFragment;
 import android.preference.Preference.OnPreferenceChangeListener;
-
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 
 public class AboutFragment extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.wedges_main);
-
+        addPreferencesFromResource(R.xml.about_main);
     }
 
     @Override

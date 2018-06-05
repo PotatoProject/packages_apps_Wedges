@@ -14,6 +14,22 @@
     <string name="power_ls_category">Lockscreen power menu</string>
     <string name="qs_colors_category">Colors and more</string>
 
+    <!-- Dev info -->
+    <string name="about_potato">Potato Open Sauce Project is a butter smooth Android aftermarket firmware. We handpicked the best features around and are adding our own sauce to it. Get ready to taste the unique features it brings with itself.</string>
+    <string name="fotato">Kshitij Gupta (AgentFabulous)</string>
+    <string name="fotato_summary">Founder and Lead developer</string>
+    <string name="cofotato">Nico Franke (ZerNico)</string>
+    <string name="cofotato_summary">Co-founder and developer/contributor</string>
+    <string name="designers">Designers</string>
+    <string name="designer_summary">Graphic designer</string>
+    <string name="designer0">Karol Szcześniak (McAwesomePL)</string>
+    <string name="designer1">Joshua Baldassarre (JoshuaBaldassarre)</string>
+    <string name="developers">Developers</string>
+    <string name="developer_summary">Contributor</string>
+    <string name="developer0">Adesh Ikhar (Adesh15)</string>
+    <string name="developer1">Jagrav Naik (JagravNaik)</string>
+    <string name="developer2">Till Kottmann (deletescape)</string>
+
     <!-- Others -->
     <string name="wedges_summary">Would you prefer fries instead?</string>
 
