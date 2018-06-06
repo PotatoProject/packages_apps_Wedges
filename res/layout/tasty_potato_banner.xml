@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <ImageView
+        android:adjustViewBounds="true"
+        android:layout_height="150dp"
+        android:layout_width="625dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/tasty_potato_banner"
+        android:tint="?android:attr/colorAccent" />
+</LinearLayout>

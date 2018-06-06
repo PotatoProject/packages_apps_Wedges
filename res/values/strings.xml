@@ -30,6 +30,12 @@
     <string name="developer1">Jagrav Naik (JagravNaik)</string>
     <string name="developer2">Till Kottmann (deletescape)</string>
 
+    <!-- Social -->
+    <string name="googleplus">Google Plus</string>
+    <string name="twitter">Twitter</string>
+    <string name="telegram">Telegram</string>
+    <string name="github">GitHub</string>
+
     <!-- Others -->
     <string name="wedges_summary">Would you prefer fries instead?</string>
 

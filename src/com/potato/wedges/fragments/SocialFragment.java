@@ -33,7 +33,7 @@ public class SocialFragment extends SettingsPreferenceFragment implements Prefer
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.wedges_main);
+        addPreferencesFromResource(R.xml.social_main);
 
     }
 
