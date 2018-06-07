@@ -16,6 +16,8 @@
 
 package com.potato.wedges.fragments;
 
+import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
@@ -29,12 +31,21 @@ import com.android.internal.logging.nano.MetricsProto;
 
 public class GesturesFragment extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
+    private static final String KEY_ONEPLUS_GESTURES = "oneplus_gestures";
+    private static final String KEY_ONEPLUS_GESTURES_PACKAGE_NAME = "com.cyanogenmod.settings.device";
+
+    private PreferenceScreen mOneplusGestures;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.gestures_main);
 
+        PreferenceScreen prefSet = getPreferenceScreen();
+        mOneplusGestures = (PreferenceScreen) findPreference(KEY_ONEPLUS_GESTURES);
+        if (!isAppInstalled(getContext(), KEY_ONEPLUS_GESTURES_PACKAGE_NAME)) {
+            prefSet.removePreference(mOneplusGestures);
+        }
     }
 
     @Override
@@ -57,5 +68,15 @@ public class GesturesFragment extends SettingsPreferenceFragment implements Pref
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.POTATO_WEDGES;
+    }
+
+    public static boolean isAppInstalled(Context context, String packageName) {
+        try {
+            context.getPackageManager().getApplicationInfo(packageName, 0);
+            return true;
+        }
+        catch (PackageManager.NameNotFoundException e) {
+            return false;
+        }
     }
 }

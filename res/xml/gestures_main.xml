@@ -25,4 +25,14 @@
         android:summary="@string/edge_gestures_summary"
         android:icon="@drawable/ic_edge_gestures"/>
 
+    <PreferenceScreen
+        android:key="oneplus_gestures"
+        android:title="@string/oneplus_gestures"
+        android:summary="@string/oneplus_gestures_summary"
+        android:icon="@drawable/ic_opgestures">
+        <intent android:action="com.android.settings.action.EXTRA_SETTINGS"
+            android:targetPackage="com.cyanogenmod.settings.device"
+            android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
+    </PreferenceScreen>
+
 </PreferenceScreen>
