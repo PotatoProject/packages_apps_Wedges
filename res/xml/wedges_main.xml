@@ -45,6 +45,13 @@
         android:icon="@drawable/ic_navigation_settings" />
 
     <Preference
+        android:key="gestures_settings"
+        android:title="@string/gestures_main"
+        android:summary="@string/gestures_main_summary"
+        android:fragment="com.potato.wedges.fragments.GesturesFragment"
+        android:icon="@drawable/ic_gestures_settings" />
+
+    <Preference
         android:key="misc_settings"
         android:title="@string/misc_main"
         android:summary="@string/misc_main_summary"
