@@ -40,6 +40,9 @@
     <string name="misc_main">Разное</string>
     <string name="misc_main_summary">Разные настройки</string>
 
+    <string name="gestures_main">Жесты</string>
+    <string name="gestures_main_summary">Управление жестами</string>
+
 	<!-- Footer warnings -->
     <string name="heads_up_warning_text">Всплывающие уведомления предназначены для многозадачности при использовании полноэкранных приложений и / или игр. Просто знайте, что, когда вы используете всплывающие уведомления, вы не сможете использовать функцию бегущей строки.</string>
     <string name="ticker_warning_text">Функция бегущей строки предназначена для использования в качестве инструмента для многозадачности и приносит немного воспоминаний о былых временах. Просто знайте, что, пока вы используете функцию тикера, вы не сможете использовать всплывающие уведомления.</string>
@@ -369,5 +372,16 @@
     <string name="battery_percent_hidden">Скрыть</string>
     <string name="battery_percent_outside">Рядом со значком</string>
     <string name="battery_percent_inside">Внутри значка</string>
+
+    <!-- Edge gestures -->
+    <string name="edge_gestures_title">Безграничный экран</string>
+    <string name="edge_gestures_summary">Жесты от края экрана для навигации</string>
+    <string name="edge_gestures_feedback_duration_title">Длительность вибрации</string>
+    <string name="edge_gestures_long_press_delay_title">Задержка действия долгого тапа</string>
+    <string name="edge_gestures_back_category_title">Жест Назад</string>
+    <string name="edge_gestures_back_edges_title">Действие назад (вертикальная ориентация)</string>
+    <string name="edge_gestures_landscape_back_edges_title">Действие назад (горизонтальная ориентация)</string>
+    <string name="edge_gestures_back_screen_percent_title">Жест назад должен начинаться с этого процента экрана</string>
+    <string name="edge_gestures_back_screen_percent_summary">Ниже % экрана</string>
 
 </resources>
