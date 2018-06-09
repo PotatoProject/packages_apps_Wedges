@@ -1,0 +1,422 @@
+<resources>
+    <!-- Tabs -->
+    <string name="title_wedges">Wedges</string>
+    <string name="title_updates">Updates</string>
+    <string name="title_social">Social</string>
+    <string name="title_about">About Us</string>
+    <string name="device_controls">Device controls</string>
+
+    <!-- Categories -->
+    <string name="colors_category">颜色设置</string>
+    <string name="styles_category">样式</string>
+    <string name="corners_category">圆角</string>
+    <string name="power_category">电源菜单</string>
+    <string name="power_ls_category">锁屏电源菜单</string>
+    <string name="qs_colors_category">更多颜色</string>
+
+    <!-- Dev info -->
+    <string name="about_potato">Potato Open Sauce Project is a butter smooth Android aftermarket firmware. We handpicked the best features around and are adding our own sauce to it. Get ready to taste the unique features it brings with itself.</string>
+    <string name="fotato">Kshitij Gupta (AgentFabulous)</string>
+    <string name="fotato_summary">Founder and Lead developer</string>
+    <string name="cofotato">Nico Franke (ZerNico)</string>
+    <string name="cofotato_summary">Co-founder and developer/contributor</string>
+    <string name="designers">Designers</string>
+    <string name="designer_summary">Graphic designer</string>
+    <string name="designer0">Karol Szcześniak (McAwesomePL)</string>
+    <string name="designer1">Joshua Baldassarre (JoshuaBaldassarre)</string>
+    <string name="developers">Developers</string>
+    <string name="developer_summary">Contributor</string>
+    <string name="developer0">Adesh Ikhar (Adesh15)</string>
+    <string name="developer1">Jagrav Naik (JagravNaik)</string>
+    <string name="developer2">Till Kottmann (deletescape)</string>
+
+    <!-- Social -->
+    <string name="googleplus">Google Plus</string>
+    <string name="twitter">Twitter</string>
+    <string name="telegram">Telegram</string>
+    <string name="github">GitHub</string>
+
+    <!-- Others -->
+    <string name="wedges_summary">Would you prefer fries instead?</string>
+
+    <string name="navigation_main">导航栏</string>
+    <string name="navigation_main_summary"> 按键和导航栏</string>
+
+    <string name="software_keys">导航栏</string>
+    <string name="software_keys_summary">自定义导航栏</string>
+
+    <string name="hardware_keys">按键</string>
+    <string name="hardware_keys_summary">自定义物理按键</string>
+
+    <string name="themes_main">主题</string>
+    <string name="themes_main_summary">为菜单着色!</string>
+
+    <string name="misc_main">其他</string>
+    <string name="misc_main_summary">其他设置</string>
+
+    <string name="gestures_main">手势</string>
+    <string name="gestures_main_summary">触摸手势</string>
+
+    <!-- Footer warnings -->
+    <string name="heads_up_warning_text">浮动通知是在多任务处理中使用，比如当使用全屏应用或者玩游戏的时候，会弹出浮动通知。使用浮动通知时将不能使用状态栏通知提示。</string>
+    <string name="ticker_warning_text">通知提示也是被用作多任务处理的工具并带来旧 Android 版本功能的回味。使用状态栏通知提示时将不能使用浮动通知。</string>
+    <string name="carrier_label_warning_text">请注意，自定义运营商标签在扩展状态栏区域中不可用，其也被称为快速设置区域。使用 emoji 表情作为您的运营商标签可能会在亮色背景下导致一些可见度问题。</string>
+    <string name="themes_warning_text">In rare cases, you may have to restart SystemUI for the theme to apply properly (especially on notifications). You can do so by either restarting your device or only restarting SystemUI from the Advanced Reboot menu.</string>
+
+    <string name="qs_main">Quick settings</string>
+    <string name="qs_main_summary">QS-Panel settings</string>
+
+    <string name="theme_color">Accent colors</string>
+    <string name="theme_base">Base colors</string>
+
+    <string name="corner_radius">Rounded corner radius</string>
+    <string name="content_padding">Corner content padding</string>
+    <string name="corner_fwvals">Use framework values</string>
+    <string name="corner_fwvals_summary">Useful if the device actually has rounded corners</string>
+
+    <string name="qs_bg_wall_title">Use Wallpaper colors</string>
+    <string name="qs_bg_wall_summary">Set QS background color from Wallpaper</string>
+
+    <string name="clock_main">Clock settings</string>
+    <string name="clock_main_summary">Statusbar clock customisation</string>
+    <string name="carrier_main">Carrier label settings</string>
+    <string name="carrier_main_summary">Set carrier label options</string>
+    <string name="statusbar_main">Statusbar settings</string>
+    <string name="statusbar_main_summary">Customise statusbar elements</string>
+    <string name="battery_main">Battery settings</string>
+    <string name="battery_main_summary">Battery icon options</string>
+
+    <string name="settings_icon_tint_title">Tint settings icons</string>
+    <string name="settings_icon_tint_summary">Apply accent colors to settings icons</string>
+
+    <!-- System theme style -->
+    <string name="system_theme_style_title">系统主题</string>
+    <string name="system_theme_style_auto">自动（基于壁纸）</string>
+    <string name="system_theme_style_light">亮色</string>
+    <string name="system_theme_style_dark">暗色</string>
+    <string name="system_theme_style_black">黑色</string>
+
+    <!-- Color Picker -->
+  <string name="dialog_color_picker">选色器</string>
+  <string name="press_color_to_apply">点选以下颜色以应用</string>
+  <string name="arrow_right">→</string>
+  <string name="arrow_down">↓</string>
+  <string name="hex">颜色对应的十六进制代码：</string>
+  <string name="hex_hint">#ff000000</string>
+  <string name="set">设置</string>
+  <string name="color_default">默认</string>
+
+    <!-- DUI -->
+  <string name="navbar_interface_title">界面</string>
+  <string name="navbar_size">导航栏尺寸</string>
+  <string name="navbar_mode">导航栏模式</string>
+  <string name="navbar_mode_summary">选择要在设备上使用的导航栏模式</string>
+  <string name="navbar_visibility">启用导航栏</string>
+  <string name="navigationbar_settings_title">导航栏</string>
+  <string name="navigationbar_settings_summary">自定义导航栏样式和行为</string>
+  <string name="navbar_general_title">高级</string>
+  <string name="navigation_bar_left_title">左手模式</string>
+  <string name="navigation_bar_left_summary">横屏时将导航栏放在屏幕的左侧</string>
+  <string name="smartbar_interface">SmartBar</string>
+  <string name="icon_pack_picker_dialog_title">图标包</string>
+  <string name="image_exceeds_max_allowed_size">图像不能超过 512×512 像素</string>
+  <string name="invalid_icon_from_uri">无法从内容提供器中加载图像</string>
+  <string name="picker_activities">活动</string>
+  <string name="select_custom_app_title">选择自定义应用</string>
+  <string name="select_custom_activity_title">选择自定义活动</string>
+  <string name="profile_applist_title">应用</string>
+  <string name="default_string">默认</string>
+  <string name="default_settings">默认设置</string>
+  <string name="default_settings_summary">默认的 AOSP 导航栏</string>
+
+  <!-- Actions dialog and default task values set in ActionPreference xml-->
+    <string name="choose_action_title">选择操作</string>
+    <string name="action_entry_default_action">默认设置</string>
+    <string name="action_entry_select_app">选择应用</string>
+    <string name="action_entry_custom_action">选择自定义操作</string>
+    <string name="action_value_default_action" translatable="false">default</string>
+    <string name="action_value_select_app" translatable="false">app</string>
+    <string name="action_value_custom_action" translatable="false">custom</string>
+    <string name="action_value_back" translatable="false">task_back</string>
+    <string name="action_value_home" translatable="false">task_home</string>
+    <string name="action_value_search_assist" translatable="false">task_assist</string>
+    <string name="action_value_recent_apps" translatable="false">task_recents</string>
+    <string name="action_value_voice_search" translatable="false">task_voice_search</string>
+    <string name="action_value_menu" translatable="false">task_menu</string>
+
+    <!-- Fling -->
+  <string name="fling_settings">Fling 设置</string>
+  <string name="fling_settings_summary">一个非常独特且完全通过手势控制的导航栏</string>
+  <string name="fling_interface">Fling</string>
+  <string name="fling_enable_title">启用 Fling</string>
+  <string name="fling_back_home_policy">在任何时候都必须设置返回键和 Home 键。要改变返回键和 Home 键的功能，必须要先设置想要的功能。\n\n同时，设置了双击操作将会导致单击操作有延迟。</string>
+  <string name="fling_split_bar_policy">当只分配了右侧或左侧的动作时，该动作适用于整栏。</string>
+  <string name="fling_def_summary">未设置操作</string>
+  <string name="fling_swipe_actions">滑动手势</string>
+  <string name="fling_tap_actions">点击手势</string>
+  <string name="fling_short_swipe_right">向右短滑</string>
+  <string name="fling_short_swipe_left">向左短滑</string>
+  <string name="fling_long_swipe_right">向右长滑</string>
+  <string name="fling_long_swipe_left">向左长滑</string>
+  <string name="fling_right_up_swipe">右侧向上滑动</string>
+  <string name="fling_left_up_swipe">左侧向上滑动</string>
+  <string name="fling_single_tap">单击右侧</string>
+  <string name="fling_double_tap">双击右侧</string>
+  <string name="fling_long_press">长按右侧</string>
+  <string name="fling_single_left_tap">单击左侧</string>
+  <string name="fling_double_left_tap">双击左侧</string>
+  <string name="fling_long_left_press">长按左侧</string>
+  <string name="long_swipe_portrait_title">纵向</string>
+  <string name="long_swipe_landscape_title">横向</string>
+  <string name="portrait_right_swipe_title">纵向右滑</string>
+  <string name="portrait_left_swipe_title">纵向左滑</string>
+  <string name="landscape_right_swipe_title">横向右滑</string>
+  <string name="landscape_left_swipe_title">横向左滑</string>
+  <string name="vertical_up_swipe_title">垂直向上滑动</string>
+  <string name="vertical_down_swipe_title">垂直向下滑动</string>
+  <string name="up_swipe_title">上滑</string>
+  <string name="down_swipe_title">下滑</string>
+  <string name="long_swipe_reset">重置</string>
+  <string name="fling_advanced">高级</string>
+  <string name="fling_long_swipe_title">长滑动阈值</string>
+  <string name="fling_long_swipe_summary">基于 Fling 宽度或高度的百分比调节长滑阈值</string>
+  <string name="fling_trails_enable_title">启用手势轨迹</string>
+  <string name="fling_trails_enable_summary">滑动手势显示轨迹</string>
+  <string name="fling_trails_color_title">轨迹颜色</string>
+  <string name="fling_trails_width_title">轨迹宽度</string>
+  <string name="fling_appearance">外观</string>
+  <string name="fling_show_logo_title">显示 Fling logo</string>
+  <string name="fling_animate_logo_title">动画 logo</string>
+  <string name="fling_animate_logo_summary">触摸时显示 Logo 动画</string>
+  <string name="fling_logo_color">Logo 颜色</string>
+  <string name="fling_logo_custom_logo_pick_title">自定义 logo 图标</string>
+  <string name="fling_logo_custom_logo_image_pick_title">自定义 logo 图像</string>
+  <string name="fling_logo_custom_logo_reset_title">重置 logo 图标</string>
+  <string name="fling_show_ripple_title">显示波纹动画</string>
+  <string name="fling_show_ripple_summary">触摸时的波纹效果</string>
+  <string name="fling_ripple_color">波纹颜色</string>
+  <string name="fling_longpress_timeout_label_left">较小延迟</string>
+  <string name="fling_longpress_timeout_label_right">较高延迟</string>
+  <string name="fling_longpress_title">长按延迟</string>
+  <string name="fling_longpress_summary">增加或减少执行长按所需的时间</string>
+  <string name="fling_keyboard_cursors_title">动态键盘光标操作</string>
+  <string name="fling_keyboard_cursors_move_summary">当显示键盘时，长按左键或右键可将指针向左或向右移动。\n长按按键以移动指针，单击按键栏回到主屏幕。</string>
+  <string name="fling_logo_opacity_title">Fling logo 不透明度</string>
+
+    <!-- Pulse navigation bar music visualizer -->
+  <string name="pulse_help_policy_notice_summary">当扬声器正在播放音频时，某些音频脉冲将不能正常工作</string>
+  <string name="pulse_settings">Pulse</string>
+  <string name="pulse_settings_summary">导航栏音乐可视化</string>
+  <string name="fling_show_pulse_title">显示 Pulse</string>
+  <string name="fling_show_pulse_summary">导航栏上的音频可视化效果</string>
+  <string name="pulse_render_mode_title">渲染模式</string>
+  <string name="pulse_render_mode_fading_bars">虚线</string>
+  <string name="pulse_render_mode_solid_lines">实线</string>
+  <string name="fling_pulse_color">Pulse 颜色</string>
+  <string name="eos_fling_lavalamp_title">开启霓虹灯</string>
+  <string name="eos_fling_lavalamp_summary">可视化样式以平滑的霓虹灯风格颜色混合</string>
+  <string name="pulse_advanced_category">高级</string>
+  <string name="pulse_legacy_mode_advanced_category">虚线模式设置</string>
+  <string name="pulse_custom_fudge_factor">理智水平</string>
+  <string name="lavamp_solid_speed_title">霓虹灯速度</string>
+  <string name="pulse_solid_units_count">实线计数</string>
+  <string name="pulse_solid_lines_count">实线数量</string>
+  <string name="pulse_solid_units_opacity">实线不透明度</string>
+  <string name="pulse_solid_dimen_category">实线模式设置</string>
+  <string name="pulse_custom_buttons_opacity_title">Pulse 上的 Smartbar 按键不透明度</string>
+
+    <!-- Pulse config -->
+  <string name="pulse_custom_dimen">栏宽度</string>
+  <string name="pulse_custom_div">栏间距</string>
+  <string name="pulse_filled_block_size">块大小</string>
+  <string name="pulse_empty_block_size">块间距</string>
+
+    <!-- Navbar height -->
+  <string name="navigation_bar_size_title">栏大小</string>
+  <string name="portrait_title">纵向高度</string>
+  <string name="land_vert_title">横向宽度</string>
+  <string name="land_hor_title">横向高度</string>
+  <string name="positive_done">完成</string>
+
+    <!-- SmartBar -->
+    <string name="smartbar_category">Smartbar</string>
+  <string name="smartbar_settings_title">Smartbar 设置</string>
+  <string name="smartbar_settings_summary">完全可定制的导航栏</string>
+  <string name="smartbar_editor_title">开启编辑模式</string>
+  <string name="smartbar_editor_summary">打开 smartbar 按键编辑器</string>
+  <string name="smartbar_help_policy_notice_summary">当处于编辑模式时，中按下并拖动一个按钮来改变其位置或长按一个按钮来显示编辑菜单。 当显示菜单时，按钮位置可能会改变。\n\n设置双击动作会延迟单击。</string>
+  <string name="smartbar_context_menu_position_title">上下文按钮布局位置</string>
+  <string name="smartbar_context_menu_position_summary">设置上下文按钮如菜单键和输入法选择器的位置</string>
+  <string name="smartbar_right">右</string>
+  <string name="smartbar_left">左</string>
+  <string name="smartbar_button_animation_title">按键触摸动画</string>
+  <string name="smartbar_button_animation_summary">设置主按键按下时的动画风格</string>
+  <string name="smartbar_button_animation_ripple">波纹</string>
+  <string name="smartbar_button_animation_spring">跳跃</string>
+  <string name="smartbar_button_animation_flip">翻转</string>
+  <string name="smartbar_button_animation_pixel">Pixel（所有按键）</string>
+  <string name="smartbar_button_animation_pixel_home">Pixel（仅主页按键）</string>
+  <string name="smartbar_button_animation_pixel_home_ripple">Pixel（仅主页按键）和波纹</string>
+  <string name="smartbar_factory_reset_title">恢复默认设置</string>
+  <string name="smartbar_factory_reset_confirm">你确定将 Smartbar 恢复到默认设置？</string>
+  <string name="smartbar_ime_action_title">输入法和媒体操作</string>
+  <string name="smartbar_ime_action_summary">设置屏幕键盘显示时或正在播放音乐时显示的按钮</string>
+  <string name="smartbar_ime_action_none">无</string>
+  <string name="smartbar_ime_action_arrows">输入光标</string>
+  <string name="smartbar_ime_action_switcher">键盘切换器</string>
+  <string name="smartbar_ime_action_dynamic">输入/媒体 箭头</string>
+  <string name="smartbar_backup_current_config_title">保存配置文件</string>
+  <string name="smartbar_restore_config_title">还原配置文件</string>
+  <string name="smartbar_config_name_edit_dialog_title">Smartbar 配置文件名称</string>
+  <string name="smartbar_config_name_edit_dialog_message">输入名称或者留空</string>
+  <string name="smartbar_config_dialog_title">Smartbar 配置文件</string>
+  <string name="smartbar_config_backup_success_toast">Smartbar 配置保存成功</string>
+  <string name="smartbar_config_restore_success_toast">Smartbar 配置还原成功</string>
+  <string name="smartbar_config_backup_error_toast">保存 Smartbar 配置文件时出错</string>
+  <string name="smartbar_config_restore_error_toast">恢复 Smart Bar 配置文件时出错</string>
+  <string name="navbar_buttons_alpha_title">按钮不透明度</string>
+  <string name="smartbar_longpress_delay_title">按键长按延迟</string>
+  <string name="smartbar_longpress_delay_summary">设置系统在触发长按动作之前的等待时间</string>
+  <string name="smartbar_longpress_delay_default">默认延迟（低）</string>
+  <string name="smartbar_longpress_delay_normal">正常延迟</string>
+  <string name="smartbar_longpress_delay_long">高延迟</string>
+  <string name="smartbar_custom_icon_size_title">自定义图标缩放</string>
+  <string name="one_handed_mode_title">单手模式</string>
+  <string name="one_handed_mode_summary">允许在导航栏上滑动以启用单手模式</string>
+  <string name="smartbar_double_tap_sleep_title">双击休眠</string>
+  <string name="smartbar_double_tap_sleep_summary">双击导航栏的空白区域休眠</string>
+
+  <string name="reset">重置</string>
+
+    <!-- Hardware button navigation -->
+  <string name="hardware_keys_volume_keys_title">音量控制</string>
+  <string name="hardware_keys_home_key_title">主页键</string>
+  <string name="hardware_keys_menu_key_title">菜单键</string>
+  <string name="hardware_keys_assist_key_title">搜索键</string>
+  <string name="hardware_keys_appswitch_key_title">多任务键</string>
+  <string name="hardware_keys_back_key_title">返回键</string>
+  <string name="hardware_keys_double_tap_summary">设置双击操作</string>
+  <string name="hardware_keys_single_tap_summary">设置单击操作</string>
+  <string name="hardware_keys_long_press_summary">设置长按操作</string>
+  <string name="hardware_keys_single_tap_title">单击操作</string>
+  <string name="hardware_keys_long_press_title">长按操作</string>
+  <string name="hardware_keys_double_tap_title">双击操作</string>
+  <string name="hardware_keys_category">导航栏按钮</string>
+  <string name="hardware_keys_disable_title">禁用导航栏按钮</string>
+
+    <!-- Button brightness -->
+  <string name="button_backlight_options_category">背光选项</string>
+  <string name="button_backlight_enable_title">允许按键背光</string>
+  <string name="button_link_brightness">关联屏幕亮度</string>
+  <string name="button_link_brightness_summary">按键背光亮度将根据屏幕的亮度进行调整</string>
+  <string name="button_manual_brightness">亮度级别</string>
+  <string name="button_timeout_title">背光超时</string>
+  <string name="button_backlight_on_touch_only_title">触摸时点亮按键背光</string>
+  <string name="button_backlight_on_touch_only_summary">按键背光将只出现在按下按键时, 而不是一直出现。背光超时仍然会影响此功能。</string>
+
+    <!-- Volume rocker music control -->
+  <string name="volume_button_music_control_title">播放控制</string>
+  <string name="volume_button_music_control_summary">当屏幕关闭时，长按音量键会跳过音乐音轨</string>
+
+    <!-- Quick Settings brightness icon -->
+  <string name="brightness_icon_title">自动亮度图标</string>
+  <string name="brightness_icon_summary">在亮度滑块右侧显示自动亮度图标以切换自动亮度</string>
+
+    <!-- QuickSettings Panel Transparency -->
+  <string name="qs_panel_alpha_title">不透明度</string>
+  <string name="qs_panel_color_title">颜色</string>
+
+    <!-- Power Menu -->
+  <string name="powermenu_reboot_title">重启</string>
+  <string name="powermenu_advanced_reboot_title">高级重启</string>
+  <string name="powermenu_advanced_reboot_summary">为重启选项开启高级重启菜单，例如热重启、恢复模式、引导模式。同时也添加重启系统界面选项</string>
+  <string name="powermenu_screenshot_title">截屏</string>
+  <string name="powermenu_airplane_title">飞行模式</string>
+  <string name="powermenu_lockscreen_title">锁屏可用</string>
+  <string name="powermenu_lockscreen_summary">启用在锁定屏幕上显示和使用电源菜单对话框的功能</string>
+  <string name="powermenu_ls_reboot_summary">在锁屏上显示重启选项</string>
+  <string name="powermenu_ls_advanced_reboot_summary">在锁屏上显示高级重启选项</string>
+  <string name="powermenu_ls_screenshot_summary">在锁屏上显示截图选项</string>
+  <string name="powermenu_ls_airplane_summary">在锁屏上显示飞行模式选项</string>
+
+    <!--3-Finger screenshot-->
+    <string name="three_finger_gesture">Three finger gesture</string>
+    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Face auto unlock</string>
+    <string name="face_auto_unlock_summary">Dismiss lockscreen after face unlocking</string>
+
+    <!-- Carrier Label -->
+  <string name="carrier_options">选择显示位置</string>
+  <string name="custom_carrier_label_title">自定义运营商标签</string>
+  <string name="custom_carrier_label_explain">输入自定义标签(留空则使用你的网络名称)</string>
+  <string name="custom_carrier_label_notset">当前未设置自定义运营商标签</string>
+  <string name="show_carrier_title">运营商标签</string>
+  <string name="show_carrier_disabled">禁用</string>
+  <string name="show_carrier_keyguard">锁屏</string>
+  <string name="show_carrier_statusbar">状态栏</string>
+  <string name="show_carrier_enabled">都启用</string>
+
+    <!-- Status bar clock options -->
+  <string name="status_bar_title">状态栏</string>
+  <string name="status_bar_style_title">样式</string>
+  <string name="status_bar_clock">时钟和日期</string>
+  <string name="clock_title_enable">对齐方式</string>
+  <string name="clock_enabled">已启用</string>
+  <string name="clock_disabled">禁用</string>
+  <string name="status_bar_clock_style_reset">重置颜色</string>
+  <string name="status_bar_show_clock_title">显示时钟和日期</string>
+  <string name="status_bar_am_pm_title">上午/下午</string>
+  <string name="status_bar_am_pm_info">24 小时制时钟已启用</string>
+  <string name="enable_clock_weekday">星期计数</string>
+  <string name="enable_clock_weekday_summary">在时间前显示简写的星期</string>
+  <string name="right_clock">右侧</string>
+  <string name="left_clock">左侧</string>
+  <string name="dont_show">隐藏</string>
+  <string name="clock_date_display">日期</string>
+  <string name="clock_date_display_summary">在时钟前显示自定义的日期</string>
+  <string name="clock_date_style">日期样式</string>
+  <string name="clock_date_format">日期格式</string>
+  <string name="clock_date_string_edittext_title">日期格式必须如：MM/dd/yy</string>
+  <string name="clock_date_string_edittext_summary">输入字符串</string>
+  <string name="am_pm_clock_normal">正常字体大小</string>
+  <string name="am_pm_clock_small">小号字体</string>
+  <string name="am_pm_clock_none">隐藏</string>
+  <string name="clock_date_display_none">隐藏</string>
+  <string name="clock_date_display_small">小号字体</string>
+  <string name="clock_date_display_normal">正常字体大小</string>
+  <string name="clock_date_style_normal">正常</string>
+  <string name="clock_date_style_lowercase">小写</string>
+  <string name="clock_date_style_uppercase">大写</string>
+  <string name="clock_date_format_custom">输入自定义的 java 时间格式</string>
+  <string name="status_bar_clock_seconds_title">显示秒数</string>
+
+    <!-- Battery styles -->
+    <string name="battery_style_title">电池图标样式</string>
+    <string name="battery_style_summary">更改状态栏电池图标的外观</string>
+    <string name="battery_style_port">纵向</string>
+    <string name="battery_style_land">横向</string>
+    <string name="battery_style_circle">环形</string>
+    <string name="battery_style_dotted_circle">虚线圆圈</string>
+    <string name="battery_style_text">文本</string>
+    <string name="battery_style_hidden">隐藏</string>
+    <!-- Battery percent -->
+    <string name="show_battery_percent_title">显示电量百分比</string>
+    <string name="show_battery_percent_summary">在电池图标旁边显示电量</string>
+    <string name="battery_percent_hidden">隐藏</string>
+    <string name="battery_percent_outside">外部</string>
+    <string name="battery_percent_inside">内部</string>
+
+    <!-- Edge gestures -->
+    <string name="edge_gestures_title">Edge gestures</string>
+    <string name="edge_gestures_summary">Swipe from the edges of your screen to navigate</string>
+    <string name="edge_gestures_feedback_duration_title">Haptic feedback duration</string>
+    <string name="edge_gestures_long_press_delay_title">Delay until long press action starts</string>
+    <string name="edge_gestures_back_category_title">Back gesture</string>
+    <string name="edge_gestures_back_edges_title">Trigger back gesture from</string>
+    <string name="edge_gestures_landscape_back_edges_title">Trigger back gesture on landscape from</string>
+    <string name="edge_gestures_back_screen_percent_title">Back gesture must start below this percentage of the screen</string>
+    <string name="edge_gestures_back_screen_percent_summary">Trigger below % of screen</string>
+
+</resources>
