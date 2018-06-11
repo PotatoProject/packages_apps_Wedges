@@ -70,6 +70,24 @@
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/deletescape"/>
         </Preference>
+        
+        <Preference
+            android:title="@string/developer3"
+            android:summary="@string/developer_summary"
+            android:icon="@drawable/ic_code">
+            <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/ShreyanshLodha"/>
+        </Preference>
+
+        <Preference
+            android:title="@string/developer4"
+            android:summary="@string/developer_summary"
+            android:icon="@drawable/ic_code">
+            <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/akhilnarang"/>
+        </Preference>
     </PreferenceCategory>
 
     <PreferenceCategory
