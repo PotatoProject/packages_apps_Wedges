@@ -273,6 +273,7 @@
     </string-array>
 
     <string-array name="edge_gestures_long_press_time_labels">
+        <item>200 ms</item>
         <item>250 ms</item>
         <item>500 ms</item>
         <item>750 ms</item>
@@ -282,6 +283,7 @@
     </string-array>
 
     <string-array name="edge_gestures_long_press_time" translatable="false">
+        <item>200</item>
         <item>250</item>
         <item>500</item>
         <item>750</item>

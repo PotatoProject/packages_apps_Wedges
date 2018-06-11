@@ -38,7 +38,7 @@
         android:title="@string/edge_gestures_long_press_delay_title"
         android:dialogTitle="@string/edge_gestures_long_press_delay_title"
         android:summary="%s"
-        android:defaultValue="500" />
+        android:defaultValue="250" />
 
     <Preference android:key="edge_gestures_description"
         android:summary="Swipe from bottom to trigger Home gesture, keep it pressed to open recents. Swipe from bottom left or bottom right to go back." />
