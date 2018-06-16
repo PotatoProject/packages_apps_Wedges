@@ -45,6 +45,13 @@
         android:icon="@drawable/ic_navigation_settings" />
 
     <Preference
+        android:key="notification_settings"
+        android:title="@string/notification_main"
+        android:summary="@string/notification_main_summary"
+        android:fragment="com.potato.wedges.fragments.NotificationsFragment"
+        android:icon="@drawable/ic_notification_settings" />
+
+    <Preference
         android:key="gestures_settings"
         android:title="@string/gestures_main"
         android:summary="@string/gestures_main_summary"
