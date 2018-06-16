@@ -25,6 +25,7 @@ import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v14.preference.PreferenceFragment;
 import android.preference.Preference.OnPreferenceChangeListener;
+import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
@@ -32,11 +33,12 @@ import com.android.internal.logging.nano.MetricsProto;
 public class NotificationsFragment extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
     private ListPreference mAnnoyingNotification;
+    private ListPreference mNoisyNotification;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.qs_main);
+        addPreferencesFromResource(R.xml.notification_main);
 
         mAnnoyingNotification = (ListPreference) findPreference("less_notification_sounds");
         mAnnoyingNotification.setOnPreferenceChangeListener(this);
@@ -44,6 +46,14 @@ public class NotificationsFragment extends SettingsPreferenceFragment implements
                 Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD,
                 30000, UserHandle.USER_CURRENT);
         mAnnoyingNotification.setValue(String.valueOf(threshold));
+
+        mNoisyNotification = (ListPreference) findPreference("notification_sound_vib_screen_on");
+        mNoisyNotification.setOnPreferenceChangeListener(this);
+        int mode = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.NOTIFICATION_SOUND_VIB_SCREEN_ON,
+                1, UserHandle.USER_CURRENT);
+        mNoisyNotification.setValue(String.valueOf(mode));
+        mNoisyNotification.setSummary(mNoisyNotification.getEntry());
     }
 
     @Override
@@ -63,6 +73,14 @@ public class NotificationsFragment extends SettingsPreferenceFragment implements
             int mode = Integer.parseInt(((String) newValue).toString());
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD, mode, UserHandle.USER_CURRENT);
+            return true;
+        } else if (preference.equals(mNoisyNotification)) {
+            int mode = Integer.parseInt(((String) newValue).toString());
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.NOTIFICATION_SOUND_VIB_SCREEN_ON, mode, UserHandle.USER_CURRENT);
+            int index = mNoisyNotification.findIndexOfValue((String) newValue);
+            mNoisyNotification.setSummary(
+                    mNoisyNotification.getEntries()[index]);
             return true;
         }
 
