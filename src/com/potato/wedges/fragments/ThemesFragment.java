@@ -86,7 +86,7 @@ public class ThemesFragment extends SettingsPreferenceFragment implements Prefer
         setupAccentPreference();
         mSystemThemeStyle = (ListPreference) findPreference(KEY_SYSTEM_THEME_STYLE);
         int systemThemeStyle = Settings.System.getInt(getContentResolver(),
-                Settings.System.SYSTEM_THEME_STYLE, 0);
+                Settings.System.SYSTEM_THEME_STYLE, 2);
         int valueIndex = mSystemThemeStyle.findIndexOfValue(String.valueOf(systemThemeStyle));
         mSystemThemeStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
         mSystemThemeStyle.setSummary(mSystemThemeStyle.getEntry());
