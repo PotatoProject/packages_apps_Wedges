@@ -15,4 +15,17 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
+
+    <PreferenceCategory
+        android:title="@string/notifications_category">
+
+            <ListPreference
+            android:key="less_notification_sounds"
+            android:title="@string/less_notification_sounds_title"
+            android:summary="@string/less_notification_sounds_summary"
+            android:entries="@array/less_notification_sounds_entries"
+            android:entryValues="@array/less_notification_sounds_values" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

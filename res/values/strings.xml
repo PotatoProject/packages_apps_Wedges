@@ -13,6 +13,7 @@
     <string name="power_category">Power menu</string>
     <string name="power_ls_category">Lockscreen power menu</string>
     <string name="qs_colors_category">Colors and more</string>
+    <string name="notifications_category">Notifications</string>
 
     <!-- Dev info -->
     <string name="about_potato">Potato Open Sauce Project is a butter smooth Android aftermarket firmware. We handpicked the best features around and are adding our own sauce to it. Get ready to taste the unique features it brings with itself.</string>
@@ -430,5 +431,14 @@
     <string name="edge_gestures_landscape_back_edges_title">Trigger back gesture on landscape from</string>
     <string name="edge_gestures_back_screen_percent_title">Back gesture must start below this percentage of the screen</string>
     <string name="edge_gestures_back_screen_percent_summary">Trigger below % of screen</string>
+
+    <!-- Less Notification sounds -->
+    <string name="less_notification_sounds_title">Smart notification sounds</string>
+    <string name="less_notification_sounds_summary">Play the notification sound of each app only once per set time period</string>
+    <string name="less_notification_sounds_default">App default</string>
+    <string name="less_notification_sounds_10s">Every 10 seconds</string>
+    <string name="less_notification_sounds_30s">Every 30 seconds</string>
+    <string name="less_notification_sounds_1m">Every minute</string>
+    <string name="less_notification_sounds_2m">Every 2 minutes</string>
 
 </resources>
