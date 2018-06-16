@@ -59,7 +59,7 @@
             android:icon="@drawable/ic_code">
             <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://github.com/JagravNaik"/>
+            android:data="https://github.com/akhilnarang"/>
         </Preference>
 
         <Preference
@@ -68,9 +68,9 @@
             android:icon="@drawable/ic_code">
             <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://github.com/deletescape"/>
+            android:data="https://github.com/JagravNaik"/>
         </Preference>
-        
+
         <Preference
             android:title="@string/developer3"
             android:summary="@string/developer_summary"
@@ -86,8 +86,9 @@
             android:icon="@drawable/ic_code">
             <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://github.com/akhilnarang"/>
+            android:data="https://github.com/deletescape"/>
         </Preference>
+
     </PreferenceCategory>
 
     <PreferenceCategory

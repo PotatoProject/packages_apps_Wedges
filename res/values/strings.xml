@@ -24,13 +24,13 @@
     <string name="designer_summary">Graphic designer</string>
     <string name="designer0">Karol Szcześniak (McAwesomePL)</string>
     <string name="designer1">Joshua Baldassarre (JoshuaBaldassarre)</string>
-    <string name="developers">Developers</string>
-    <string name="developer_summary">Contributor</string>
+    <string name="developers">Core Team</string>
+    <string name="developer_summary">Developer</string>
     <string name="developer0">Adesh Ikhar (Adesh15)</string>
-    <string name="developer1">Jagrav Naik (JagravNaik)</string>
-    <string name="developer2">Till Kottmann (deletescape)</string>
+    <string name="developer1">Akhil Narang (akhilnarang)</string>
+    <string name="developer2">Jagrav Naik (JagravNaik)</string>
     <string name="developer3">Shreyansh Lodha (shreyanshLodha)</string>
-    <string name="developer4">Akhil Narang (akhilnarang)</string>
+    <string name="developer4">Till Kottmann (deletescape)</string>
 
     <!-- Social -->
     <string name="googleplus">Google Plus</string>
