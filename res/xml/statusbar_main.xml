@@ -37,4 +37,10 @@
         android:fragment="com.potato.wedges.fragments.BatteryOptions"
         android:icon="@drawable/ic_battery" />
 
+    <com.potato.wedges.preferences.SystemSettingSwitchPreference
+        android:key="activity_indicators"
+        android:title="@string/activity_indicators"
+        android:summary="@string/activity_indicators_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
