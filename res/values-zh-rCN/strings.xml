@@ -4,7 +4,7 @@
     <string name="title_updates">Updates</string>
     <string name="title_social">Social</string>
     <string name="title_about">About Us</string>
-    <string name="device_controls">Device controls</string>
+    <string name="device_controls">设备控制</string>
 
     <!-- Categories -->
     <string name="colors_category">颜色设置</string>
@@ -13,6 +13,7 @@
     <string name="power_category">电源菜单</string>
     <string name="power_ls_category">锁屏电源菜单</string>
     <string name="qs_colors_category">更多颜色</string>
+    <string name="notifications_category">通知</string>
 
     <!-- Dev info -->
     <string name="about_potato">Potato Open Sauce Project is a butter smooth Android aftermarket firmware. We handpicked the best features around and are adding our own sauce to it. Get ready to taste the unique features it brings with itself.</string>
@@ -38,7 +39,7 @@
 
     <!-- Others -->
     <string name="wedges_summary">Would you prefer fries instead?</string>
-
+  
     <string name="navigation_main">导航栏</string>
     <string name="navigation_main_summary"> 按键和导航栏</string>
 
@@ -46,7 +47,7 @@
     <string name="software_keys_summary">自定义导航栏</string>
 
     <string name="hardware_keys">按键</string>
-    <string name="hardware_keys_summary">自定义硬件按钮</string>
+    <string name="hardware_keys_summary">自定义实体按键</string>
 
     <string name="themes_main">主题</string>
     <string name="themes_main_summary">为菜单着色!</string>
@@ -56,6 +57,12 @@
 
     <string name="gestures_main">手势</string>
     <string name="gestures_main_summary">触摸手势</string>
+    
+    <string name="oneplus_gestures">OnePlus手势</string>
+    <string name="oneplus_gestures_summary">特定于OnePlus设备的手势</string>
+
+    <string name="notification_main">通知</string>
+    <string name="notification_main_summary">通知设置 </string>
 
     <!-- Footer warnings -->
     <string name="heads_up_warning_text">浮动通知是在多任务处理中使用，比如当使用全屏应用或者玩游戏的时候，会弹出浮动通知。使用浮动通知时将不能使用状态栏通知提示。</string>
@@ -76,18 +83,23 @@
 
     <string name="qs_bg_wall_title">使用壁纸的颜色</string>
     <string name="qs_bg_wall_summary">从壁纸设置QS背景色</string>
+    <string name="qs_bg_use_fw">使用默认的颜色</string>
+    <string name="qs_bg_use_fw_summary">禁用自定义快速设置样式的主题</string>
 
-    <string name="clock_main">时钟设置</string>
-    <string name="clock_main_summary">状态栏时钟定制</string>
-    <string name="carrier_main">运营商标签设置</string>
-    <string name="carrier_main_summary">设置运营商标签选项</string>
+    <string name="clock_main">时钟选项</string>
+    <string name="clock_main_summary">自定义状态栏时钟</string>
+    <string name="carrier_main">运营商标签</string>
+    <string name="carrier_main_summary">自定义状态栏运营商标签</string>
     <string name="statusbar_main">状态栏设置</string>
     <string name="statusbar_main_summary">自定义状态栏元素</string>
-    <string name="battery_main">电池设置</string>
-    <string name="battery_main_summary">电池图标选项</string>
+    <string name="battery_main">电池选项</string>
+    <string name="battery_main_summary">自定义状态栏或快速设置瓷块的电池</string>
 
     <string name="settings_icon_tint_title">设置图标色调</string>
     <string name="settings_icon_tint_summary">将重音颜色应用于设置图标</string>
+    
+    <string name="activity_indicators">活动指标</string>
+    <string name="activity_indicators_summary">显示网络活动指标</string>
 
     <!-- System theme style -->
     <string name="system_theme_style_title">系统主题</string>
@@ -128,6 +140,17 @@
   <string name="default_string">默认</string>
   <string name="default_settings">默认设置</string>
   <string name="default_settings_summary">默认的 AOSP 导航栏</string>
+  
+  <!-- Heads up -->
+  <string name="heads_up_title">启用浮动通知</string>
+  <string name="heads_up_summary_enabled">浮动通知已启用</string>
+  <string name="heads_up_summary_disabled">浮动通知已禁用</string>
+  <string name="heads_up_blacklist_add_package_title">添加应用</string>
+  <string name="heads_up_blacklist_add_package_summary">在这些应用中禁用浮动通知</string>
+  <string name="heads_up_blacklist_title">黑名单</string>
+  <string name="heads_up_blacklist_choose_app">选择应用</string>
+  <string name="heads_up_blacklist_dialog_delete_title">删除</string>
+  <string name="heads_up_blacklist_dialog_delete_message">删除选中的项目?</string>
 
   <!-- Actions dialog and default task values set in ActionPreference xml-->
     <string name="choose_action_title">选择操作</string>
@@ -304,6 +327,10 @@
   <string name="hardware_keys_category">硬件按钮</string>
   <string name="hardware_keys_disable_title">禁用硬件按钮</string>
 
+    <!-- ANBI -->
+    <string name="anbi_title">防误触</string>
+    <string name="anbi_summary">防止在触摸屏幕时与导航按钮进行交互</string>
+    
     <!-- Button brightness -->
   <string name="button_backlight_options_category">背光选项</string>
   <string name="button_backlight_enable_title">允许按键背光</string>
@@ -345,7 +372,7 @@
 
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">人脸自动解锁</string>
-    <string name="face_auto_unlock_summary">面部解锁后关闭锁定屏幕</string>
+    <string name="face_auto_unlock_summary">面部解锁后自动解锁屏幕</string>
 
     <!-- Carrier Label -->
   <string name="carrier_options">选择显示位置</string>
@@ -418,5 +445,20 @@
     <string name="edge_gestures_landscape_back_edges_title">横屏时从何处触发返回手势</string>
     <string name="edge_gestures_back_screen_percent_title">返回手势必须从屏幕的这个百分比开始</string>
     <string name="edge_gestures_back_screen_percent_summary">触发在屏幕的以下百分比</string>
+
+  <!-- Less notification sounds -->
+  <string name="less_notification_sounds_title">智能通知提示音</string>
+  <string name="less_notification_sounds_summary">每个应用的通知提示音在设定的时间段内只响一次</string>
+  <string name="less_notification_sounds_default">应用默认值</string>
+  <string name="less_notification_sounds_10s">每 10 秒</string>
+  <string name="less_notification_sounds_30s">每 30 秒</string>
+  <string name="less_notification_sounds_1m">每分钟</string>
+  <string name="less_notification_sounds_2m">每 2 分钟</string>
+  
+    <!-- Notification per screen status -->
+    <string name="notification_sound_vib_screen_on_title">屏幕开启时的通知声</string>
+    <string name="notification_sound_vib_screen_on_never">从不</string>
+    <string name="notification_sound_vib_screen_on_always">始终（默认）</string>
+    <string name="notification_sound_vib_screen_on_nomedia">如果没有媒体正在播放</string>
 
 </resources>
